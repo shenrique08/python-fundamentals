@@ -1,7 +1,7 @@
 import random
 
 # initializing the matrix
-map_treasure = [["blank" for _ in range(3)] for _ in range(3)]
+map_treasure = [[" " for _ in range(3)] for _ in range(3)]
 
 row_pos_treasure = random.randint(0, 2)
 column_pos_treasure = random.randint(0, 2)
