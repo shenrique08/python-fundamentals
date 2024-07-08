@@ -8,14 +8,14 @@ while continuar:
     inteiro = int(input("Digite um número inteiro: "))
     inteiros.append(inteiro)
     opcao = input("Deseja continuar? [S/N] ").lower().strip()
+    if opcao == 'n':
+        continuar = False
+        
     contador += 1
     if inteiro % 2 == 0:
         pares.append(inteiro)
     else:
         impares.append(inteiro)
-
-    if opcao == 'n':
-        continuar = False
 
 inteiros.sort(reverse=True)
 print(f"Você digitou {contador} elementos")
