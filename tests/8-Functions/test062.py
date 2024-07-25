@@ -2,6 +2,13 @@ from time import sleep
 
 
 def contagem(inicio, fim, passo):
+    """
+    -> A função realiza uma contagem e mostra na tela
+    :param inicio: início da contagem
+    :param fim: valor do fim da contagem
+    :param passo: valor do passo da contagem
+    :return: não tem retorno
+    """
     print("-=" * 40)
     print(f"Contagem de {inicio} até {fim} de {passo} em {passo}")
     if inicio < fim:
@@ -24,3 +31,5 @@ inicio = int(input("Início: "))
 fim = int(input("Fim: "))
 passo = int(input("Passo: "))
 contagem(inicio, fim, passo)
+
+help(contagem)
