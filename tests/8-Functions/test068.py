@@ -9,4 +9,6 @@ def notas(valores):
     return resultado
 
 
+numeros = [54, 34, 21, 21]
 print(notas([1, 2, 4, 5, 3, 2]))
+print(notas(numeros))
